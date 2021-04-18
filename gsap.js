@@ -1,9 +1,10 @@
+gsap.registerPlugin(TextPlugin);
 var tl = gsap.timeline()
     .to("body", { duration: 3, backgroundColor: "blue" })
-    .to("h1", { scale: 1.05, text: "Typewriter effect with <br> GSAP3...BOOM did it!", ease: "power1.in", duration: 3, color: "white" })
+    .to("h1", { scale: 1.05, text: "Typewriter effect with <br> GSAP3...BOOM did it!", width: "350", marginLeft: "50", ease: "power1.in", backgroundColor: "grey", padding: "20", duration: 3, borderRadius: "15px", color: "white" })
     .to("h2", { y: 300, rotate: 360, fontFamily: "cursive", color: "white" })
     .to("h2", { text: "All of your animations are at your complete control!", duration: 3, ease: "power3.in", scale: "1.1", paddingLeft: "50", paddingRight: "50" })
     .to("body", { backgroundImage: "url(coco.jpg)" })
     .to("body", { backgroundRepeat: "no-repeat" })
     .to("body", { backgroundSize: "cover", height: "100vh" })
-    .to("h2", { color: "red", ease: "bounce", backgroundColor: "black", paddingTop: "15px" })
+    .to("h2", { color: "red", ease: "bounce", backgroundColor: "black", paddingTop: "15px", y: 0 })
